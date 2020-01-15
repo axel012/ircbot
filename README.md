@@ -58,13 +58,13 @@ commands:
 ```
 
 ### ScreenShoots
-/start
+#### /start
 ![](/screenshot/screen1.png?raw=true)
 
-Twitch command !give
+#### Twitch command !give
 ![](/screenshot/screen2.png?raw=true)
 
-/stop
+#### /stop
 ![](/screenshot/screen3.png?raw=true)
 You can still receive commands, but chat won't be shown.
 
@@ -74,7 +74,7 @@ You can still receive commands, but chat won't be shown.
 
 ### Thanks 
     Thanks to Paul Mutton for its Twitch library 
-    http://www.jibble.org/pircbot.php
+http://www.jibble.org/pircbot.php
 
 ### Todos
  - Add more commands
