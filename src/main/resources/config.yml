@@ -58,4 +58,4 @@ commands:
     timeout: 15000
     shared: true
     vote: false
-    data: 'items list: https://github.com/axel012/ircbot/itemnames/items.txt'
+    data: 'items list: https://raw.githubusercontent.com/axel012/ircbot/master/itemnames/items.txt'
