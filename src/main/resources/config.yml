@@ -1,0 +1,61 @@
+# +----------------------------------------------------+
+# <                     Section                        >
+# <                      Chat                          >
+# +----------------------------------------------------+
+# Enable/Disable twitch chat in minecraft chat
+# Timeout is the time between a user message in milliseconds (to prevent spam)
+
+# +----------------------------------------------------+
+# <                     Section                        >
+# <                     Twitch                         >
+# +----------------------------------------------------+
+# Twitch bot needed data
+# channel: channel to connect to
+# username: twitch credentials username
+# oauth_pwd: oauth string generated from https://twitchapps.com/tmi/,
+#   example
+#     channel: 'mytwitchchannel'
+#     username: 'mytwitchbotaccount'
+#     oauth_pwd: 'oauth:a6tk143pf63tkexha1skmetylz3upk'
+
+# +----------------------------------------------------+
+# <                     Section                        >
+# <                     Commands                       >
+# +----------------------------------------------------+
+# Commands enabled by the bot to execute by people of chat
+# example
+#   !give <item_name> -> performs /give @a <item_name> command in minecraft
+#   (nbt tags and item count are forbidden)
+#   !summon <entity_name> -> performs /summon <entity_name> (not implemented yet)
+# Params
+#   @enable:  enable / disable command
+#   @timeout: set timeout of a user sending the command in chat
+#   @shared:  timeout is shared between users, when a user sends the command it timeouts
+#   @vote:    allow voting for items between timeouts, ignore shared property if true
+
+chat:
+  enable: true
+  timeout: 15000
+twitch:
+  channel: ''
+  username: ''
+  oauth_pwd: ''
+commands:
+  give:
+    enable: true
+    timeout: 5000
+    shared: false
+    vote: false
+    data: ''
+  summon:
+    enable: false
+    timeout: 60000
+    shared: true
+    vote: false
+    data: ''
+  items:
+    enable: true
+    timeout: 15000
+    shared: true
+    vote: false
+    data: 'items list: https://github.com/axel012/ircbot/itemnames/items.txt'
