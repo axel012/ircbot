@@ -70,7 +70,13 @@ You can still receive commands, but chat won't be shown.
 
 ### Build
 - Clone repository
-- Open in intellij or eclipse, run gradle build task
+- From IDE
+  Open in intellij or eclipse, run gradle build task
+- From command line
+  gradlew build
+
+Plugin should be in build/libs when done
+
 
 ### Thanks 
     Thanks to Paul Mutton for its Twitch library 
